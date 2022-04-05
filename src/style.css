@@ -1,0 +1,142 @@
+body{
+    background: #d5d4d4;
+}
+
+.Panel {
+   display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    padding: 50px 165px;
+    background-color: #fff;
+    border: solid 1px #979797;
+}
+
+.Panel__image{
+    border: solid 1px #979797;
+}
+
+.Panel__subscription{
+    width: 350px;
+    font-family: Lato;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    margin: 0 125px;
+}
+
+.Panel__subscription-heading{
+    width: 100%;
+    margin: 0 20px 10px 0;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    color: #262626;
+    text-transform: uppercase;
+}
+
+.Panel__subscription-description{
+    max-width: 100%;
+    margin: 10px 2px 20px 1px;
+    font-size: 14px;
+    line-height: 1.36;
+    color: #262626;
+
+}
+
+.Panel__subscription-email{
+    width: calc(100% - 30px);
+    height: 18px;
+    margin: 0 0 10px;
+    padding: 11px 15px;
+    font-family: Lato;
+    font-size: 14px;
+    border: solid 1px #e6e6e6;
+    background-color: #fff;
+    color: #3aaa35;
+    outline-color: #3aaa35;
+    font-weight: bold;
+}
+
+.Panel__subscription-email::placeholder{
+    color: #808080;
+    font-weight: normal;
+}
+
+.Panel__subscription-agreement{
+    max-width: 100%;
+    font-size: 14px;
+    color: #3b3b3b;
+    display: flex;
+    margin: 0;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.Panel__subscription-agreement-label{
+    max-width: 90%;
+}
+
+.Panel__subscription-agreement-check{
+    outline-color: #3aaa35;
+    appearance: none;
+    background-color: transparent;
+    color: #3aaa35;
+    margin: 0;
+    font: inherit;
+    width: 20px;
+    height: 20px;
+    border: 0.15em solid #3aaa35;
+    display: grid;
+    place-content: center;
+}
+.Panel__subscription-agreement-check::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em #3aaa35;
+
+    transform-origin: bottom left;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+.Panel__subscription-agreement-check:checked {
+    background-color: #3aaa35;
+}
+.Panel__subscription-agreement-check:checked::before {
+    transform: scale(1);
+    box-shadow: inset 1em 1em #ffffff;
+}
+
+.Panel__subscription-submit{
+    width: 100%;
+    margin: 20px 0 10px;
+    padding: 12px 147px;
+    background-color: #3aaa35;
+    border: none;
+    font-size: 18px;
+    color: #fff;
+    outline-color: #3aaa35;
+}
+
+.Panel__subscription-submit:hover{
+    opacity: 0.7;
+}
+
+.Panel__subscription-submit:active{
+    background-color: #2d8629;
+}
+
+.Panel__subscription-disclaimer{
+    max-width: 100%;
+    margin: 10px 13px 0;
+    font-size: 14px;
+    line-height: 1.21;
+    color: #666666;
+    text-align: center;
+}
